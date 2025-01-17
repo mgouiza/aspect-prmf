@@ -1,14 +1,14 @@
 # aspect-prmf 
 
 ## About
-aspect-prmf contains a suite of Python functions to open, read, write, and modify [ASPECT](https://aspect.geodynamics.org/) input parameter files. For example, it can be used to handle ASPECT input parameter files from within Jupyter Notebook. These routines were created mainly to help in the development of geodynamic modelling educational material, but can be used and modified for other purposes.
+aspect_prmf contains a suite of Python functions to open, read, write, and modify [ASPECT](https://aspect.geodynamics.org/) input parameter files. For example, it can be used to handle ASPECT input parameter files from within Jupyter Notebook. These routines were created mainly to help in the development of geodynamic modelling educational material, but can be used and modified for other purposes.
 
 ## Dependencies
 - xmltodict
 - requests
 
 ## Functions
-aspect-prmf.py contains the following functions:
+aspect_prmf.py contains the following functions:
 
 - ***combine_dicts***: Recursive function that takes two dictionaries (a) and (b), and combines them in (b). Keys and values that are in (a) but not found in (b), are added to (b). This is an in-place function, use with caution as input b is overwritten.
 - ***rekey***: Recursive function to update parameter names imported from parameters.xml. The function update the dictionary keys/parameter names by replacing '_20' with ' ' and '_2d' with '-'.
@@ -24,4 +24,4 @@ aspect-prmf.py contains the following functions:
 - ***prmname_check***:  Function to check if all parameter names in a parameter dictionary are recognized. Unrecognized parameters are printed on the screen.
 
 ## Examples
-aspect-prmf.ipynb is a Jupyter notebook with simple examples illustrating how to use the different functions.
+aspect_prmf.ipynb is a Jupyter notebook with simple examples illustrating how to use the different functions.
